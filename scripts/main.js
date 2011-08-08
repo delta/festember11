@@ -4,17 +4,12 @@ function fixedFloating() {
 	return function(){
 		var y = $(this).scrollTop();
 		if(y >= limit) {
-			//$(".itleft").addClass("fixe").removeClass("abso");
-			//$(".itright").addClass("fixe").removeClass("abso");
-//			$(".itleft").animate({position: "fixed", left: 0, top: 0}).removeClass("abso");
 			if(!isFloatingMenuVisible){
 				$("#floatingMenu").slideDown(250);
 				isFloatingMenuVisible = true;
 			}
 		}
 		else {
-			//$(".itleft").removeClass("fixe").addClass("abso");
-			//$(".itright").removeClass("fixe").addClass("abso");
 			if(isFloatingMenuVisible){
 				$("#floatingMenu").slideUp(250);
 				isFloatingMenuVisible = false;

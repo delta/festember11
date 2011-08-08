@@ -68,6 +68,7 @@ else:
 	<div class="clearer"></div>
 	
 	<div class="contentcontainer">
+		<div class="clearer"></div>
 		<div id="content">
 			<?php 
 				$page = "home";
@@ -85,6 +86,10 @@ else:
 				endif;
 			?>
 		</div>
+		<div class="rightcont">
+			<div class="sponser"><a href="" id="sponsora" target="_blank" ><div id="sponsorimg"></div></a></div>
+		</div>
+		<div class="clearer"></div>
 	</div>
 	
 	
@@ -125,7 +130,6 @@ else:
 	<div class="fglow"></div>
 	<div class="footer">
 		<a href="http://www.festember.in/"><span class="flogo"></span></a>
-		<div class="sponser"><a href="" id="sponsora" target="_blank" ><div id="sponsorimg"></div></a></div>
 		<!--<div class="shoe">
 			Designed and Maintained by Webteam, NIT Trichy
 		</div>-->

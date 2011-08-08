@@ -24,10 +24,32 @@ else:
 		<link rel="stylesheet" type="text/css" href="./styles/jquery.lightbox-0.5.css" media="screen" />
 		<link rel="stylesheet" href="./styles/nivo-default.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="./styles/nivo-slider.css" type="text/css" media="screen" />
-		
+		<link rel="stylesheet" href="./styles/slider.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="./scripts/jquery.min.js"></script>
 		<script type="text/javascript" src="./scripts/jquery.lightbox-0.5.js"></script>
 		<script type="text/javascript" src="./scripts/main.js"></script>
+	<!-- Simple OpenID Selector -->
+	<link type="text/css" rel="stylesheet" href="styles/openid.css" />
+	<script type="text/javascript" src="scripts/openid-jquery.js"></script>
+	<script type="text/javascript" src="scripts/openid-en.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			openid.init('openid_identifier');
+			openid.setDemoMode(true); //Stops form submission for client javascript-only test purposes
+		});
+	</script>
+	<!-- /Simple OpenID Selector -->
+
+<script type="text/javascript">
+	  //login slider
+$(document).ready(function(){
+	$(".trigger").click(function(){
+		$(".panel").toggle("fast");
+		$(this).toggleClass("active");
+		return false;
+	});
+});
+</script>
 	</head>
 	<noscript>
 		<style type="text/css">
@@ -136,6 +158,31 @@ else:
 			For Sponsorship, contact <b><em>marketing@festember.in</em></b>
 		</div>
 	</div>
+
+<div class="panel">
+	
+		<!-- Simple OpenID Selector -->
+	<form action="examples/consumer/try_auth.php" method="get" id="openid_form">
+		<input type="hidden" name="action" value="verify" />
+
+			<div id="openid_choice">
+
+				<div id="openid_btns"></div>
+			</div>
+			<div id="openid_input_area">
+				<input id="openid_identifier" name="openid_identifier" type="text" value="http://" />
+				<input id="openid_submit" type="submit" value="Sign-In"/>
+			</div>
+			<noscript>
+				<p>OpenID is service that allows you to log-on to many different websites using a single indentity.
+				Find out <a href="http://openid.net/what/">more about OpenID</a> and <a href="http://openid.net/get/">how to get an OpenID enabled account</a>.</p>
+			</noscript>
+
+	</form>
+	<!-- /Simple OpenID Selector -->
+</div>
+<a class="trigger" href="#">Login</a>
+
 	</body>
 </html>
 <?php

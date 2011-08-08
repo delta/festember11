@@ -280,14 +280,13 @@ left:32px;
 .sponser{
 	background:url('../images/sponser.jpg') no-repeat;
 	position:relative;
-	top:25px;
 	float:right;
+	margin: 50px;
 	width:165px;
 	height:140px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	right:50px;
 }
 .fglow{
 	background:url('../images/fglow.jpg') no-repeat;

@@ -69,9 +69,7 @@ $(function() {
 			},
 			complete: function(data){
 				defer(to, data);
-				//$(document).animate({scrollTop: 220}, 1000);
-				//$(document).scrollTop(220);
-				setTimeout(scroller, 100);
+				//setTimeout(scroller, 100);
 				
 				function scroller() {
 					if( parseInt($(document).scrollTop()) < 220 ){

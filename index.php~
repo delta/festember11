@@ -68,7 +68,6 @@ else:
 	<div class="clearer"></div>
 	
 	<div class="contentcontainer">
-		<div class="clearer"></div>
 		<div id="content">
 			<?php 
 				$page = "home";

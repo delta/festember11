@@ -144,14 +144,14 @@ body {
 	text-align: left;
 	min-height: 200px;
 	width: 100%;
+	background: url(../images/content_bg.png) no-repeat top center;
 }
 
 #content {
 	padding: 10px;
 	border-radius: 10px;
-	background: url(../images/content_bg.png) no-repeat top center;
-	width: 800px;
-	margin: auto;
+	float: left;
+	width: 720px;
 }
 
 @font-face {

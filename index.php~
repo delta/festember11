@@ -252,14 +252,19 @@ $(document).ready(function(){
 				<div class="content-bottom"></div>
 			</div>
 			<div class="rightcont">
-				<h3>Sponsors</h3>
+				<h3>Sponsors/Partners</h3>
 				<div class="sponser">
 					<div class="slidee">
 						<a href="http://esparsha.com" target="_blank"><img src="./images/s1.jpg" /></a>
 						<a href="http://www.twenty19.com" target="_blank"><img src="./images/s2.jpg" /></a>
+						<a href="http://www.freshersworld.com" target="_blank"><img src="./images/media1.jpg" /></a>
+						<a href="http://www.studyvillage.com" target="_blank"><img src="./images/media2.jpg" /></a>
+						<a href="http://www.indiastudychannel.com" target="_blank"><img src="./images/media3.jpg" /></a>
+						<a href="http://www.knowafest.com" target="_blank"><img src="./images/media4.jpg" /></a>
+						<a href="http://www.meracareerguide.com" target="_blank"><img src="./images/media5.jpg" /></a>
 					</div>
 				</div>
-				<br/><br/><br/>
+				<!--<br/><br/><br/>
 				<h3>Media Partners</h3>
 				<div class="mediapartners">
 					<div class="slidee">
@@ -270,7 +275,7 @@ $(document).ready(function(){
 						<a href="http://www.meracareerguide.com" target="_blank"><img src="./images/media5.jpg" /></a>
 					</div>
 				</div>
-				
+				-->
 			</div>
 			<div class="clearer"></div>
 		</div>

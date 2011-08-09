@@ -109,7 +109,7 @@ font-family: verdana, helvetica, arial, sans-serif;
 color:#fff;
 padding: 20px 15px 20px 40px;
 font-weight: 700;
-background:#333333 url(images/plus.png) 15% 55% no-repeat;
+background:#333333 url(../images/plus.png) 15% 55% no-repeat;
 border:1px solid #444444;
 -moz-border-radius-topleft: 20px;
 -webkit-border-top-left-radius: 20px;
@@ -130,7 +130,7 @@ font-family: verdana, helvetica, arial, sans-serif;
 color:#fff;
 padding: 20px 20px 20px 40px;
 font-weight: 700;
-background:#222222 url(images/plus.png) 15% 55% no-repeat;
+background:#222222 url(../images/plus.png) 15% 55% no-repeat;
 border:1px solid #444444;
 -moz-border-radius-topleft: 20px;
 -webkit-border-top-left-radius: 20px;
@@ -142,7 +142,7 @@ display: block;
 }
 
 a.active.trigger {
-background:#222222 url(images/minus.png) 15% 55% no-repeat;
+background:#222222 url(../images/minus.png) 15% 55% no-repeat;
 }
 
 .columns{

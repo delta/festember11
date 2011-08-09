@@ -328,13 +328,13 @@ background:url('../images/s1.jpg') no-repeat;
 }
 
 .headeranimcontainer {
-	position: absolute;
 	width: 960px;
 }
 
 .headeranimator {
-	margin: auto;
-	width: 432px;
+	left: 50%;
+	margin-left: -215px;
+	position: absolute;
 }
 
 .headeranimator canvas{

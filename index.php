@@ -172,7 +172,18 @@ $(document).ready(function(){
 		if(typeof CONSTRUCT == "function")
 			CONSTRUCT.apply(this, []);
 	</script>	
-	
+	<div class="headeranimcontainer">
+		<div class="headeranimator">
+			<div id="can1" ><canvas id="myCanvas1" height="201" width="432" ></canvas></div>
+			<div id="can2" ><canvas id="myCanvas2" height="201" width="432" ></canvas></div>
+			<div id="can3" ><canvas id="myCanvas3" height="201" width="432" ></canvas></div>
+			<div id="can4" ><canvas id="myCanvas4" height="201" width="432" ></canvas></div>
+			<div id="can5" ><canvas id="myCanvas5" height="201" width="432" ></canvas></div>
+			<div id="can6"><canvas id="myCanvas6" height="201" width="432" ></canvas></div>
+			<canvas id="myCanvas7" height="201" width="432" style="background-image:url(./images/logo.png);" ></canvas>
+			<div id="can0" onclick="cancel();"></div>
+		</div>
+	</div>
 	<div id="headerlogo"></div>
 	
 	<div class="clearer"></div>

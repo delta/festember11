@@ -9,7 +9,7 @@ $("#floatingMenu .item").hover(function() {
 	$(this).stop().animate({opacity: 0.5});
 });
 
-
+$(function(){
 var c1,c2,c3,c4,c5,c6;
 var cttx = new Array();
 window.onload=function(){
@@ -275,4 +275,4 @@ function cancel(){
 		
 	}
 }
-
+});

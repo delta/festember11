@@ -1,15 +1,7 @@
-$("#menu .item").hover(function() {	
-	$(this).stop().animate({opacity: 1},250);
-}, function() {
-	$(this).stop().animate({opacity: 0.5});
-});
-$("#floatingMenu .item").hover(function() {	
-	$(this).stop().animate({opacity: 1},250);
-}, function() {
-	$(this).stop().animate({opacity: 0.5});
-});
-
-
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="ocanvas.js">
+</script>
+<script type="text/javascript">
 var c1,c2,c3,c4,c5,c6;
 var cttx = new Array();
 window.onload=function(){
@@ -225,8 +217,7 @@ function animate(){
 	}
 	if(i==6){
 		i=0;
-	}
-	if(i!=5)
+	}	if(i!=5)
 		$(cttx[i]).css("display","block");
 	if(i==5){
 		$(cttx[i]).fadeIn(100);
@@ -275,4 +266,58 @@ function cancel(){
 		
 	}
 }
+	
+</script>
 
+<style type="text/css">
+body{
+background-color:black;}
+canvas{
+	position:absolute;
+	
+}
+#can0{
+	z-index:7;
+}
+#myCanvas1{
+	z-index:6;
+}
+#myCanvas2{
+	z-index:5;
+}
+#myCanvas3{
+	z-index:4;
+}
+#myCanvas4{
+	z-index:3;
+}
+#myCanvas5{
+	z-index:2;
+}
+#myCanvas6{
+	z-index:1;
+}
+#myCanvas7{
+	z-index:0;
+}
+#can0{
+	position:absolute;
+	width:432px;
+	height:201px;
+	
+}
+
+</style>
+<html>
+<body>
+
+<div id="can1" ><canvas id="myCanvas1" height="201" width="432" ></canvas></div>
+<div id="can2" ><canvas id="myCanvas2" height="201" width="432" ></canvas></div>
+<div id="can3" ><canvas id="myCanvas3" height="201" width="432" ></canvas></div>
+<div id="can4" ><canvas id="myCanvas4" height="201" width="432" ></canvas></div>
+<div id="can5" ><canvas id="myCanvas5" height="201" width="432" ></canvas></div>
+<div id="can6"><canvas id="myCanvas6" height="201" width="432" ></canvas></div>
+<canvas id="myCanvas7" height="201" width="432" style="background-image:url(logo.png);" ></canvas>
+<div id="can0" onclick="cancel();"></div>
+</body>
+</html>

@@ -9,14 +9,13 @@ $("#floatingMenu .item").hover(function() {
 	$(this).stop().animate({opacity: 0.5});
 });
 
-$(function(){
+(function(){
 var c1,c2,c3,c4,c5,c6;
-var cttx = new Array();
 window.onload=function(){
-	c1=document.getElementById('myCanvas1');
-	var ctx=c1.getContext("2d");
-	ctx.beginPath();
-	cttx.push(ctx);
+
+c1=document.getElementById('myCanvas1');
+var ctx=c1.getContext("2d");
+ctx.beginPath();
 ctx.translate(143,56);
 ctx.moveTo(4,30.5);
 ctx.lineTo(0,24);
@@ -29,16 +28,15 @@ ctx.bezierCurveTo(117.5,29,129.5,22,141.5,24.5);
 ctx.lineTo(134.5,37.5);
 ctx.strokeStyle="#ff0060";
 ctx.lineWidth=3;
- ctx.shadowColor = "#fb8ab4";
-    ctx.shadowBlur = 15;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
+ctx.shadowColor = "#fb8ab4";
+ctx.shadowBlur = 15;
+ctx.shadowOffsetX = 0;
+ctx.shadowOffsetY = 0;
 ctx.stroke();
 ctx.translate(-143,-56);
 
 c2=document.getElementById('myCanvas2');
 var ctx2=c2.getContext("2d");
-cttx.push(ctx2);
 ctx2.beginPath();
 ctx2.translate(113,64);
 ctx2.moveTo(17.5,31.5);
@@ -111,10 +109,10 @@ ctx4.bezierCurveTo(381.95,45.49,373.45,64.49,373.45,64.49);
 ctx4.bezierCurveTo(370.95,75.99,353.45,77.99,353.45,77.99);
 ctx4.strokeStyle="#ff0e00";
 ctx4.lineWidth=3;
- ctx4.shadowColor = "#fb8ab4";
-    ctx4.shadowBlur = 15;
-    ctx4.shadowOffsetX = 0;
-    ctx4.shadowOffsetY = 0;
+ctx4.shadowColor = "#fb8ab4";
+ctx4.shadowBlur = 15;
+ctx4.shadowOffsetX = 0;
+ctx4.shadowOffsetY = 0;
 ctx4.stroke();
 ctx4.translate(-26,-19);
 
@@ -138,10 +136,10 @@ ctx5.bezierCurveTo(384.5,5.5,367,-11,295.5,5);
 ctx5.lineTo(297,0);
 ctx5.strokeStyle="#ff0060";
 ctx5.lineWidth=3;
- ctx5.shadowColor = "#fb8ab4";
-    ctx5.shadowBlur = 15;
-    ctx5.shadowOffsetX = 0;
-    ctx5.shadowOffsetY = 0;
+ctx5.shadowColor = "#fb8ab4";
+ctx5.shadowBlur = 15;
+ctx5.shadowOffsetX = 0;
+ctx5.shadowOffsetY = 0;
 ctx5.stroke();
 ctx5.translate(-16,-41);
 
@@ -202,30 +200,26 @@ ctx6.lineTo(0,40.99);
 ctx6.bezierCurveTo(0,40.99,-5.99,36.99,0.99,31.99);
 ctx6.strokeStyle="#ff6000";
 ctx6.lineWidth=3;
- ctx6.shadowColor = "#ffba90";
-    ctx6.shadowBlur = 10;
-    ctx6.shadowOffsetX = 0;
-    ctx6.shadowOffsetY = 0;
+ctx6.shadowColor = "#ffba90";
+ctx6.shadowBlur = 10;
+ctx6.shadowOffsetX = 0;
+ctx6.shadowOffsetY = 0;
 ctx6.stroke();
 ctx6.translate(-47,-87);
-
 animate();
-
 }
 var i=1;
 var cttx=new Array("#can1","#can2","#can3","#can4","#can5","#can6");
 function animate(){
 	if(i<=6){
-	for(j=0;j<6;j++)
-	{ 
+	for(j=0;j<6;j++){ 
 		if(j == 5)
 			$(cttx[j]).fadeOut();	
 		else
 			$(cttx[j]).css("display","none");
 	}
-	if(i==6){
+	if(i==6)
 		i=0;
-	}
 	if(i!=5)
 		$(cttx[i]).css("display","block");
 	if(i==5){
@@ -233,16 +227,14 @@ function animate(){
 	}
 	setTimeout(function() {
 		i++;
-			animate();
-		},200);
-		
+		animate();
+	},200);
 }}
 function cancel(){
 	if(i>6){
-		
 		i=0;
 		setTimeout(function(){
-				for(j=0;j<6;j++)$(cttx[j]).css("display","block");
+			for(j=0;j<6;j++)$(cttx[j]).css("display","block");
 				setTimeout(function(){for(j=0;j<6;j++)$(cttx[j]).css("display","none");},100);
 				setTimeout(function(){for(j=0;j<6;j++)$(cttx[j]).css("display","block"); },500);
 				setTimeout(function(){for(j=0;j<6;j++)$(cttx[j]).css("display","none");},550);
@@ -258,21 +250,18 @@ function cancel(){
 				setTimeout(function(){for(j=0;j<6;j++)$(cttx[j]).css("display","block"); },1050);
 				setTimeout(function(){for(j=0;j<6;j++)$(cttx[j]).css("display","none");},1100);
 				setTimeout(animate,1400);
-				
 			},100);	
-		
-		
-		
 	}
 	else{
 		i=10;
 		var j;
 		for(j=0;j<6;j++)
-	{ 
-			$(cttx[j]).css("display","none");
-	}
-		
-		
+		{ 
+				$(cttx[j]).css("display","none");
+		}
 	}
 }
-});
+
+this.cancel = cancel;
+})();
+

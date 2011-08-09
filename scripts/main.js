@@ -40,8 +40,13 @@ function imgslideSponsors(container,last){
 			cur=0;
 		else
 			cur -= ht;
-		$(container + " .slidee").animate({top: cur}, 450);
-	}, 1000);
+		//$(container + " .slidee").animate({top: cur}, 450);
+		$(container + " .slidee").fadeOut(200, function() {
+			$(this).css({
+				top: cur,
+			}).fadeIn(300);
+		});
+	}, 3000);
 }
 
 $(function() {

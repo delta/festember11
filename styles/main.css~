@@ -327,8 +327,13 @@ background:url('../images/s1.jpg') no-repeat;
 	height:173px;
 }
 
+.headeranimcontainer {
+	position: absolute;
+	width: 960px;
+}
+
 .headeranimator {
-	margin: auto
+	margin: auto;
 	width: 432px;
 }
 
@@ -363,5 +368,4 @@ background:url('../images/s1.jpg') no-repeat;
 	position:absolute;
 	width:432px;
 	height:201px;
-	
 }

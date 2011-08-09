@@ -181,7 +181,7 @@ $(document).ready(function(){
 			<div id="can5" ><canvas id="myCanvas5" height="201" width="432" ></canvas></div>
 			<div id="can6"><canvas id="myCanvas6" height="201" width="432" ></canvas></div>
 			<canvas id="myCanvas7" height="201" width="432" style="background-image:url(./images/logo.png);" ></canvas>
-			<div id="can0" onclick="cancel();"></div>
+			<div id="can0" onclick="cancel();" style="cursor:pointer"></div>
 		</div>
 	</div>
 	<div id="headerlogo"></div>
@@ -263,11 +263,11 @@ $(document).ready(function(){
 				<h3>Media Partners</h3>
 				<div class="mediapartners">
 					<div class="slidee">
-						<a href="http://esparsha.com" target="_blank"><img src="./images/media1.jpg" /></a>
-						<a href="http://www.twenty19.com" target="_blank"><img src="./images/media2.jpg" /></a>
-						<a href="http://esparsha.com" target="_blank"><img src="./images/media3.jpg" /></a>
-						<a href="http://esparsha.com" target="_blank"><img src="./images/media4.jpg" /></a>
-						<a href="http://esparsha.com" target="_blank"><img src="./images/media5.jpg" /></a>
+						<a href="http://www.freshersworld.com" target="_blank"><img src="./images/media1.jpg" /></a>
+						<a href="http://www.studyvillage.com" target="_blank"><img src="./images/media2.jpg" /></a>
+						<a href="http://www.indiastudychannel.com" target="_blank"><img src="./images/media3.jpg" /></a>
+						<a href="http://www.knowafest.com" target="_blank"><img src="./images/media4.jpg" /></a>
+						<a href="http://www.meracareerguide.com" target="_blank"><img src="./images/media5.jpg" /></a>
 					</div>
 				</div>
 				

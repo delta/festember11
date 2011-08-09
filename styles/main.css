@@ -143,7 +143,8 @@ body {
 	position: relative;
 	text-align: left;
 	min-height: 200px;
-	width: 100%;
+	width: 800px;
+	margin: auto;
 	background: url(../images/content_bg.png) no-repeat top center;
 }
 
@@ -151,7 +152,7 @@ body {
 	padding: 10px;
 	border-radius: 10px;
 	float: left;
-	width: 720px;
+	width: 615px;
 }
 
 @font-face {
@@ -281,7 +282,6 @@ left:32px;
 	background:url('../images/sponser.jpg') no-repeat;
 	position:relative;
 	float:right;
-	margin: 25px;
 	width:165px;
 	height:140px;
 	border-radius: 5px;

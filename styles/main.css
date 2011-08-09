@@ -98,7 +98,7 @@ body {
 
 #menu  .events 		{top: 30px; left: 50px;}
 #menu  .pronite 	{top: 110px; left: 105px;}
-#menu  .workshops		{top: 195px; left: 200px;}
+#menu  .workshops	{top: 195px; left: 200px;}
 
 #menu  .sponsors	{top: 195px; right: 220px;}
 #menu  .gallery		{top: 110px; right: 105px;}
@@ -139,13 +139,18 @@ body {
 	text-shadow: 0 0 2px;
 }
 
+.contentouter {
+	widht: 100%;
+	background: url(../images/content_bg.png) no-repeat top center;
+}
+
 .contentcontainer {
 	position: relative;
 	text-align: left;
 	min-height: 200px;
 	width: 800px;
 	margin: auto;
-	background: url(../images/content_bg.png) no-repeat top center;
+	margin-top: -30px;
 }
 
 #content {

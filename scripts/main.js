@@ -57,30 +57,32 @@ $(function() {
 			window.history.pushState(null,"events",to);
 		else
 			window.location.hash = "#!" + to;
-
-		$.ajax({
-			url: to + "&_a=1",
-			method: "GET",
-			success: function(data) {
-				$("#content").html(data);
-			},
-			error: function(err){
-				$("#content").html("SOME ERROR OCCURED.\n" + err);
-			},
-			complete: function(data){
-				defer(to, data);
-				//setTimeout(scroller, 100);
-				
-				function scroller() {
-					if( parseInt($(document).scrollTop()) < 220 ){
-						$(document).scrollTop(parseInt($(document).scrollTop()) + 2 );
-						setTimeout(function(){
-							scroller();
-						}, 1);
+		
+		$("#content").slideUp(200, function(){
+			$.ajax({
+				url: to + "&_a=1",
+				method: "GET",
+				success: function(data) {
+					$("#content").html(data);
+				},
+				error: function(err){
+					$("#content").html("SOME ERROR OCCURED.\n" + err);
+				},
+				complete: function(data){
+					defer(to, data);
+					//setTimeout(scroller, 100);
+					$("#content").slideDown();
+					function scroller() {
+						if( parseInt($(document).scrollTop()) < 220 ){
+							$(document).scrollTop(parseInt($(document).scrollTop()) + 2 );
+							setTimeout(function(){
+								scroller();
+							}, 1);
 						
+						}
 					}
 				}
-			}
+			});
 		});
 		return false;
 	});

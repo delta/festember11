@@ -219,25 +219,47 @@ $(document).ready(function(){
 	</div><!-- container -->
 	<div class="contentouter">
 		<div class="contentcontainer">
-			<div id="content">
-				<?php 
-					$page = "home";
-					if(isset($_GET["page"]))
-						$page = $_GET["page"];
+			<div class="ccont">
+				<div class="content-top"></div>
+				<div id="content">
+					<?php 
+						$page = "home";
+						if(isset($_GET["page"]))
+							$page = $_GET["page"];
 
-					if(file_exists("./pages/" . $page . ".php")):
-						include("./pages/" . $page . ".php");
-					else:
-				?>
-					<div style="text-align:center">
-						<img src="./images/error404.jpg" />
-					</div>
-				<?php
-					endif;
-				?>
+						if(file_exists("./pages/" . $page . ".php")):
+							include("./pages/" . $page . ".php");
+						else:
+					?>
+						<div style="text-align:center">
+							<img src="./images/error404.jpg" />
+						</div>
+					<?php
+						endif;
+					?>
+				</div>
+				<div class="content-bottom"></div>
 			</div>
 			<div class="rightcont">
-				<div class="sponser"><a href="" id="sponsora" target="_blank" ><div id="sponsorimg"></div></a></div>
+				<h3>Sponsors</h3>
+				<div class="sponser">
+					<div class="slidee">
+						<a href="http://esparsha.com" target="_blank"><img src="./images/s1.jpg" /></a>
+						<a href="http://www.twenty19.com" target="_blank"><img src="./images/s2.jpg" /></a>
+					</div>
+				</div>
+				<br/><br/><br/>
+				<h3>Media Partners</h3>
+				<div class="mediapartners">
+					<div class="slidee">
+						<a href="http://esparsha.com" target="_blank"><img src="./images/media1.jpg" /></a>
+						<a href="http://www.twenty19.com" target="_blank"><img src="./images/media2.jpg" /></a>
+						<a href="http://esparsha.com" target="_blank"><img src="./images/media3.jpg" /></a>
+						<a href="http://esparsha.com" target="_blank"><img src="./images/media4.jpg" /></a>
+						<a href="http://esparsha.com" target="_blank"><img src="./images/media5.jpg" /></a>
+					</div>
+				</div>
+				
 			</div>
 			<div class="clearer"></div>
 		</div>

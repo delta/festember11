@@ -32,6 +32,18 @@ function reloadSponsors() {
 	sponsor();
 }
 
+function imgslideSponsors(container,last){
+	var cur = 0,
+		ht=123;
+	setInterval(function() {
+		if(last * -1 * ht + ht >= cur)
+			cur=0;
+		else
+			cur -= ht;
+		$(container + " .slidee").animate({top: cur}, 450);
+	}, 1000);
+}
+
 $(function() {
 	
 	$("#menu .item").css("opacity", 0);
@@ -43,7 +55,9 @@ $(function() {
 		$("#menu .item").animate({opacity: 1},"slow").delay(100).animate({opacity: 0.5},"slow");
 	}, 5000);
 	
-	reloadSponsors();
+	//reloadSponsors();
+	imgslideSponsors(".sponser",2);
+	imgslideSponsors(".mediapartners",5);
 	
 	$(window).scroll(fixedFloating());
 	

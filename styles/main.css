@@ -154,7 +154,7 @@ body {
 }
 
 #content {
-	background: url(../images/content_bk.png) repeat-y;
+	/*background: url(../images/content_bk.png) repeat-y;*/
 }
 
 .rightcont {
@@ -171,13 +171,13 @@ body {
 
 .content-top {
 	height: 21px;
-	background: url(../images/content_up.png) no-repeat;
+	/*background: url(../images/content_up.png) no-repeat;*/
 }
 
 
 .content-bottom {
 	height: 21px;
-	background: url(../images/content_down.png) no-repeat;
+	/*background: url(../images/content_down.png) no-repeat;*/
 }
 
 @font-face {
@@ -203,7 +203,7 @@ body {
 }
 
 .content-body p {
-line-height: 30px;
+line-height: 20px;
 margin: 30px 0;
 }
 
@@ -368,4 +368,17 @@ background:url('../images/s1.jpg') no-repeat;
 	position:absolute;
 	width:432px;
 	height:201px;
+}
+
+.nivo-prevNav {
+	background: url(../images/arrows.png) top left no-repeat;
+	text-indent: -7000em;
+	width: 30px;
+	height: 30px;
+}
+.nivo-nextNav {
+	background: url(../images/arrows.png) top right no-repeat;
+	text-indent: -7000em;
+	width: 30px;
+	height: 30px;
 }

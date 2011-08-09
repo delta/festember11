@@ -196,7 +196,7 @@ body {
 }
 
 .content-body {
-	font-family: Arial;
+	font-family: Verdana, Aria;l;
 	font-size: 15px;
 	text-shadow: 0px 0px 1px ;
 	padding: 25px;
@@ -377,7 +377,7 @@ background:url('../images/s1.jpg') no-repeat;
 	height: 30px;
 }
 .nivo-nextNav {
-	background: url(../images/arrows.png) 30px 0 no-repeat;
+	background: url(../images/arrows.png) top right no-repeat;
 	text-indent: -7000em;
 	width: 30px;
 	height: 30px;

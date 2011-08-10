@@ -15,11 +15,6 @@ var providers_large = {
 		url : 'http://me.yahoo.com/'
 	},
 
-	myopenid : {
-		name : 'MyOpenID',
-		label : 'Enter your MyOpenID username.',
-		url : 'http://{username}.myopenid.com/'
-	},
         facebook : {
 		name : 'facebook',
 		url : 'javascript:facebook_click();'

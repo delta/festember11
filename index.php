@@ -102,7 +102,9 @@ if(isset($_GET["_a"])):
 	if(isset($_GET["page"]))
 		$page = $_GET["page"];
 	if(file_exists("./pages/" . $page . ".php")):
-		include("./pages/" . $page . ".php");
+	  {
+	    include("./pages/" . $page . ".php");
+	  }
 	else:
 
 ?>
@@ -141,11 +143,14 @@ else:
 <script type="text/javascript">
 	  //login slider
 $(document).ready(function(){
-	$(".trigger").click(function(){
+    $(".trigger").not(".logout").click(function(){
 		$(".panel").toggle("fast");
 		$(this).toggleClass("active");
 		return false;
 	});
+
+    $(".logout").click(function(){ return true;});
+
 });
 </script>
 	</head>
@@ -241,7 +246,6 @@ $(document).ready(function(){
 					?>
 				</div>
 				<div class="content-bottom"></div>
-				<div class="loaderr"><img src="./images/DLL.gif" /></div>
 			</div>
 			<div class="rightcont">
 				<h3>Sponsors/Partners</h3>
@@ -330,7 +334,7 @@ $(document).ready(function(){
 						}else
 						  {
 ?>
-<a class="active trigger logout" href="#">Logout</a>
+<a class="active trigger logout" href="logout">Logout</a>
 						      <?}?>
 
 	</body>

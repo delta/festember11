@@ -122,7 +122,8 @@ $(function() {
 		
 	}
 	
-	window.onpopstate = function() {
-
+	window.onpopstate = function(event) {
+		console.log(location.href + location.hash);
+		console.log(event);
 	};
 });

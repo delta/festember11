@@ -1,0 +1,37 @@
+.goBack{
+width:200px;
+height:50px;
+background:url('../images/submit.jpg') no-repeat;
+line-height:48px;
+}
+.goBack:hover{
+background-position:bottom;
+}
+#redirect{
+position:relative;
+left:350px;
+text-align:center;
+cursor:pointer;
+}
+#message{
+font-size:20px;
+position:relative;
+top:30px;
+
+}
+#tips{
+position:relative;
+top:40px;
+text-align:center;
+}
+#msgcontainer{
+position:relative;
+left:100px;
+width:700px;
+height:150px;
+text-align:center;
+background-color:#9197DA;
+border-radius:	10px;
+-moz-border-radius:	10px;
+-webkit-border-radius:	10px;
+}

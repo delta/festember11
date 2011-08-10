@@ -4,6 +4,7 @@ $SUB_DIR = (dirname($_SERVER['SCRIPT_NAME'])=='/')?'/':dirname($_SERVER['SCRIPT_
 $FULLPATH = 'http://' . $DOMAIN_NAME . $SUB_DIR;
 header('X-XRDS-Location:' . $FULLPATH . 'yadis.xrdf');
 session_start();
+
 /** <Login Related Shit **/
   try {
       function openid_auth($openid_url)
@@ -67,7 +68,7 @@ session_start();
               elseif (isset($user_data['email']))
                   $_SESSION['OPENID_WELCOME_NAME'] = $user_data['email'];
               //echo($user_data['namePerson/first']);
-              header('Location: ' . $FULLPATH);
+	      //              header('Location: ' . $FULLPATH);
           }
       }
   }
@@ -84,19 +85,9 @@ session_start();
       $logged_in = false;
   else {
       //turn $logged_in to true and connect to DB to retrieve information on recent linkpits
-      global $recent_linkpit;
+
       $logged_in = true;
-      $dbp = dbConnect();
-      $query = "SELECT tag FROM linkpit_redirections WHERE tagger='" . $_SESSION['OPENID_IDENTITY'] . "' ORDER BY reg_date DESC LIMIT 5;";
-      //echo $query;
-      if ($res = mysql_query($query)) {
-          while ($row = mysql_fetch_assoc($res))
-              array_push($recent_linkpit, $row['tag']);
-          //print_r($recent_linkpit);
-      } else {
-          die("DB Error while fetching recent linkpit");
-      }
-      mysql_close($dbp);
+      //      echo "User logged in";
   }
 
 if (!isset($_GET['openid_mode']) && isset($_GET['openid_identifier'])) {
@@ -331,7 +322,15 @@ $(document).ready(function(){
 	</form>
 	<!-- /Simple OpenID Selector -->
 </div>
+						  <?php if(!$logged_in){
+						  ?>
 <a class="trigger" href="#">Login</a>
+<?
+						}else
+						  {
+?>
+<a class="active trigger logout" href="#">Logout</a>
+						      <?}?>
 
 	</body>
 </html>

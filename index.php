@@ -336,7 +336,7 @@ $(document).ready(function(){
 ?>
 
 
-<a class="active trigger logout" href="#">Logout</a>
+<a class="active trigger logout" href="logout">Logout</a>
 						<?php endif; ?>
 
 	</body>

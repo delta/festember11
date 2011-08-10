@@ -110,8 +110,8 @@ if(isset($_GET["_a"])):
 	<img src="./images/error404.jpg" />
 </div>
 <?php
-	exit(1);
-endif;
+		exit(1);
+	endif;
 else:
 ?>
 <html>
@@ -323,15 +323,15 @@ $(document).ready(function(){
 	</form>
 	<!-- /Simple OpenID Selector -->
 </div>
-						  <?php if(!$logged_in){
+						  <?php if(!$logged_in):
 						  ?>
 <a class="trigger" href="#">Login</a>
-<?
-						}else
-						  {
+<?php
+						else:
+						  
 ?>
 <a class="active trigger logout" href="#">Logout</a>
-						      <?}?>
+						<?php endif; ?>
 
 	</body>
 </html>

@@ -250,6 +250,7 @@ $(document).ready(function(){
 					?>
 				</div>
 				<div class="content-bottom"></div>
+				<div class="loaderr"><img src="./images/DLL.gif" /></div>
 			</div>
 			<div class="rightcont">
 				<h3>Sponsors/Partners</h3>

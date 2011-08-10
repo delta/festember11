@@ -76,8 +76,9 @@ $(function() {
 			window.history.pushState(null,"events",to);
 		else
 			window.location.hash = "#!" + to;
-		
+				
 		$("#content").slideUp(200, function(){
+			$(".loaderr").fadeIn(250);
 			$.ajax({
 				url: to + "&_a=1",
 				method: "GET",

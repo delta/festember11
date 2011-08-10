@@ -77,7 +77,7 @@ $(function() {
 		else
 			window.location.hash = "#!" + to;
 				
-		$("#content").slideUp(200, function(){
+		$("#content").fadeOut(200, function(){
 			$(".loaderr").fadeIn(250);
 			$.ajax({
 				url: to + "&_a=1",
@@ -92,7 +92,7 @@ $(function() {
 					$(".loaderr").css("display","none");
 					defer(to, data);
 					//setTimeout(scroller, 100);
-					$("#content").slideDown();
+					$("#content").fadeIn();
 					function scroller() {
 						if( parseInt($(document).scrollTop()) < 220 ){
 							$(document).scrollTop(parseInt($(document).scrollTop()) + 2 );
@@ -109,11 +109,14 @@ $(function() {
 	});
 	
 	function defer(to, data) {
+		if(to != "sponsors")
+			$(".rightcont").css("display","block");
 		switch(to) {
 			case "gallery":
-				$(function() {
 					$('#gallery a').lightBox();
-				});
+			break;
+			case "sponsors":
+					$(".rightcont").css("display","none");
 			break;
 		}
 		

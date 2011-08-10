@@ -1,0 +1,146 @@
+body{
+background-color:#000;
+font: 70%/160% "verdana",sans-serif;
+color:#3a3a84;
+margin:0px;
+border:0px;
+
+}
+#outercontainer{
+margin:20px auto;
+margin-bottom:0px;
+width:900px;
+
+}
+select{
+color:#4b4c6a;
+background:url('../images/selectbg.jpg');
+width:182px;
+height:27px;
+border:none;
+padding-left:5px;
+padding-top:1px;
+font-size:15px;
+position:relative;
+}
+#event{
+font-size:12px;
+font-weight:bold;
+background-color:#9197da;
+border-radius:	3px;
+-moz-border-radius:	3px;
+-webkit-border-radius:	3px;
+text-align:center;
+padding:2px;
+}
+input{
+color:#5957a5;
+background:url('../images/textbg.jpg');
+width:182px;
+height:38px;
+border:none;
+padding-left:10px;
+padding-right:10px;
+}
+td > input[type="radio"]{
+fontsize:15px;
+}
+input:hover,input:focus{
+background-position:bottom;
+}
+#eventdisplay{
+
+}
+input[type="radio"]{
+background:none;
+width:auto;
+height:auto;
+margin-top:5px;
+margin-bottom:5px;
+}
+#r_form{
+width:600px;
+margin:0px auto;
+
+}
+label.eHead{
+font-weight:bold;
+font-size:12px;
+}
+#add{
+padding:0px;
+margin:0px;
+width:170px;
+height:38px;
+background:url('../images/add.jpg') no-repeat;
+text-align:left;
+}
+#add:hover{
+padding-bottom:3px;
+background-position:bottom left;
+
+}
+#r_submit,input[type="button"]{
+width:200px;
+height:50px;
+line-height:48px;
+background:url('../images/submit.jpg') no-repeat;
+}
+#r_submit:hover,input[type="button"]:hover{
+background-position:bottom;
+}
+div .error{
+color:#262555;
+font-size:10px;
+background-color:#ab95d0;
+border-radius:	3px;
+-moz-border-radius:	3px;
+-webkit-border-radius:	3px;
+text-align:center;
+padding:2px;
+margin:4px;
+}
+#footer{
+width:900px;
+height:96px;
+background:url('../images/footer.jpg') no-repeat;
+}
+#perror{
+font-size:12px;
+}
+
+#fren{
+background-color:#000;
+
+}
+#r_submit{
+margin-top:10px;
+cursor:pointer;
+margin-bottom:20px;
+}
+#ref_tr{
+cursor:pointer;
+}
+#registerfont{
+font-size:25px;
+text-align:center;
+padding:20px;
+}
+table{
+width:700px;
+}
+tr > td:last-child {
+text-align:center;
+font-weight:bold;
+font-size:10px;
+}
+#banner{
+width:900px;
+height:340px;
+background:url('../images/banner.jpg') no-repeat;
+}
+#fcontainer{
+width:900px;
+background:url('../images/fbg.jpg') repeat-y;
+
+}

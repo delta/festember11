@@ -1,5 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)/$ $1 [NC,L]
-RewriteRule ^(.*)/ index.php?page=$1 [L,QSA]
+RewriteRule ^(.*) index.php?page=$1 [QSA]

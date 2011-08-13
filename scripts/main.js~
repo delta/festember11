@@ -77,7 +77,7 @@ $(function() {
 		else
 			window.location.hash = "#!" + to;
 				
-		$(".loaderr").fadeIn(250);
+		$(".loaderr").fadeIn(250, function(){
 		$.ajax({
 			url: to + "&_a=1",
 			method: "GET",
@@ -94,6 +94,7 @@ $(function() {
 				//setTimeout(scroller, 100);
 				$("#content").fadeIn();
 			}
+		});
 		});
 		return false;
 	});

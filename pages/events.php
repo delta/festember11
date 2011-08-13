@@ -1,4 +1,4 @@
-<div class="content-head">CULTURALS</div>
+<!--<div class="content-head">CULTURALS</div>
 <div class="content-body">
 	<p>
 		ChoreoNite:</p>
@@ -26,4 +26,57 @@
 		Color your emotions on the canvas called Festember! Bring out the inner artist and witness the artistically gifted unleash their powers. Discover the unity through variety in the collage, carve a niche for yourself in soap modelling, or ravish the audience with your masterpiece at the Arts showcase. It is said, variety is the spice of life, Festember makes it a staple!</p>
 </div>
 <p>
-	&nbsp;</p>
+	&nbsp;</p>-->
+	
+
+<h2>DANCE</h2>
+<h3>CHOREO NITE</h3>
+<h3>WESTERN DANCE (Solo Freestyle)</h3>
+
+<h2>MUSIC</h2>
+<h3>SHRUTHILAYA (Classical)</h3>	
+<h3>TARANGINI (Eastern)</h3>
+<h3>GIG-A-HERTZ (Semi Pro Western)</h3>
+
+<h2>DRAMATICS</h2>
+<h3>THEATRIX</h3>
+
+<h2>CINEMATICS</h2>
+<h3>SHOWTIME (Short Film Making)</h3>
+<h3>FLASH (Ad Making)</h3>
+
+<h2>ART EVENTS</h2>
+<h3>DOMINOES</h3>
+<h3>PHOTOGRAPHY</h3>
+<h3>GRAFFITI</h3>
+<h3>FACE PAINTING</h3>
+
+<h2>LITERARY EVENTS</h2>
+<h2>TAMIL LITS</h2>
+
+
+<h2>ENGLISH LITS</h2>
+
+<h3>LONE WOLF QUIZ</h3>
+<h3>INDIA QUIZ</h3>
+<h3>BUZZER QUIZ</h3>
+<h3>SPECIAL QUIZ</h3>
+<h3>SPENT QUIZ</h3>
+<h3>SCRABBLE</h3>
+<h3>WHAT'S THE GOOD WORD?</h3>
+<h3>CROSSWORD</h3>
+<h3>DEBATE</h3>
+<h3>PUZZLE CHAMP</h3>
+<h3>JUST A MINUTE</h3>
+<h3>DUMB CHARADES</h3>
+<h3>POT POURRI</h3>
+<h2>HINDI LITS</h2>
+<h3>SUR SANGAM (Antakshari)</h3>
+<h3>KURUKSHETRA (Debate)</h3>
+<h3>ISHARO ISHARO MEIN (Dumb C)</h3>
+<h3>HUM SAATH SAATH HAIN</h3>
+<h3>HULKA FULKA</h3>
+<h3>SAANP SEEDHI</h3>
+<h3>TWARIT SRIJNATMAK LEKHAN</h3>
+<h3>ROCHAK MANTRANA</h3>
+<h3>BLUFF MASTER</h3>

@@ -227,7 +227,11 @@ $(document).ready(function(){
 	<div class="contentouter">
 		<div class="contentcontainer">
 			<div class="ccont">
-				<div class="content-top"></div>
+				<div style="margin: 20px;width: 100px;margin: 20px auto;">
+					<div class="loaderr" style="position: absolute;display: none;margin-left: 30px">
+						<img src="./images/loading_02.gif" />
+					</div>
+				</div>
 				<div id="content">
 					<?php 
 						$page = "home";
@@ -245,7 +249,6 @@ $(document).ready(function(){
 						endif;
 					?>
 				</div>
-				<div class="content-bottom"></div>
 			</div>
 			<div class="rightcont">
 				<h3>Sponsors/Partners</h3>

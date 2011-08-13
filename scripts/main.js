@@ -77,7 +77,7 @@ $(function() {
 		else
 			window.location.hash = "#!" + to;
 				
-		$(".loaderr").fadeIn(250, function(){
+		$(".loaderr").slideDown(100);
 		$.ajax({
 			url: to + "&_a=1",
 			method: "GET",
@@ -89,12 +89,10 @@ $(function() {
 				console.log(err);
 			},
 			complete: function(data){
-				$(".loaderr").css("display","none");
+				$(".loaderr").slideUp(250);
 				defer(to, data);
-				//setTimeout(scroller, 100);
 				$("#content").fadeIn();
 			}
-		});
 		});
 		return false;
 	});
@@ -120,33 +118,22 @@ $(function() {
 		} catch(e) {
 			return;
 		}
-		$("#content").fadeOut(200, function(){
-			$(".loaderr").fadeIn(250);
-			$.ajax({
-				url: to + "&_a=1",
-				method: "GET",
-				success: function(data) {
-					$("#content").html(data);
-				},
-				error: function(err){
-					$("#content").html("SOME ERROR OCCURED.\n" + err);
-				},
-				complete: function(data){
-					$(".loaderr").css("display","none");
-					defer(to, data);
-					//setTimeout(scroller, 100);
-					$("#content").fadeIn();
-					function scroller() {
-						if( parseInt($(document).scrollTop()) < 220 ){
-							$(document).scrollTop(parseInt($(document).scrollTop()) + 2 );
-							setTimeout(function(){
-								scroller();
-							}, 1);
-						
-						}
-					}
-				}
-			});
+		$(".loaderr").slideDown(250);
+		$.ajax({
+			url: to + "&_a=1",
+			method: "GET",
+			success: function(data) {
+				$("#content").html(data);
+			},
+			error: function(err){
+				$("#content").html("SOME ERROR OCCURED.\n" + err);
+				console.log(err);
+			},
+			complete: function(data){
+				$(".loaderr").slideUp(250);
+				defer(to, data);
+				$("#content").fadeIn();
+			}
 		});
 	};
 });

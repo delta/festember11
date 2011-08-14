@@ -235,9 +235,13 @@ $(document).ready(function(){
 				<div id="content">
 					<?php 
 						$page = "home";
+						$subpage="";
 						if(isset($_GET["page"]))
 							$page = $_GET["page"];
-
+						if(isset($_GET["subpage"]))
+							$subpage = $_GET["subpage"];
+						die("pages found " . $page . $subpage);
+						
 						if(file_exists("./pages/" . $page . ".php")):
 							include("./pages/" . $page . ".php");
 						else:

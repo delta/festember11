@@ -168,6 +168,10 @@ body {
 	width: 615px;
 }
 
+ccont h2
+{
+font-size:20px;
+}
 
 .content-top {
 	height: 21px;
@@ -200,6 +204,7 @@ body {
 	font-size: 15px;
 	text-shadow: 0px 0px 1px ;
 	padding: 25px;
+	
 }
 
 .content-body p {
@@ -228,6 +233,40 @@ margin: 30px 0;
 .content-body table td span.cname {
 	font-weight: bold;
 	color: #fff;
+}
+
+.content-body-col1 h2 ,.content-body-col2 h2 , .content-body-col3 h2
+{
+font-size:14px;
+color:#fff;
+line-height:15px
+
+}
+
+.content-body-col1 li ,.content-body-col2 li , .content-body-col3 li
+{
+margin:4px 0;
+}
+.content-body-col1 , .content-body-col2 , .content-body-col3
+{
+color:#a09d99;
+text-decoration:none;
+font-family: Verdana, Aria;l;
+font-size: 12px;
+width:170px;
+padding:10px 20px 20px 10px;
+float:left;
+line-height: 15px;
+} 
+.content-body-col1 a, .content-body-col2 a, .content-body-col3 a
+{
+color:#a09d99;
+text-decoration:none;
+}
+
+.content-body-col1 a:hover, .content-body-col2 a:hover, .content-body-col3 a:hover
+{
+color:#fff
 }
 .scroller {
 	height: 200px;

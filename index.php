@@ -99,12 +99,19 @@ if (!isset($_GET['openid_mode']) && isset($_GET['openid_identifier'])) {
 echo "<!doctype html>\n";
 if(isset($_GET["_a"])):
 	$page = "home";
-	if(isset($_GET["page"]))
-		$page = $_GET["page"];
+	$subpage= "";
+	if(isset($_GET["page"])){
+		$tmp = explode('+',$_GET["page"]);
+		$page = $tmp[0];
+		if($tmp[1])
+			$subpage=$tmp[1];
+	}
 	if(file_exists("./pages/" . $page . ".php")):
-	  {
-	    include("./pages/" . $page . ".php");
-	  }
+		if($subpage != ""):
+			include("./pages/$page.php?subpage=$subpage");
+		else:
+			include("./pages/$page.php");
+		endif;
 	else:
 
 ?>
@@ -236,14 +243,18 @@ $(document).ready(function(){
 					<?php 
 						$page = "home";
 						$subpage="";
-						if(isset($_GET["page"]))
-							$page = $_GET["page"];
-						if(isset($_GET["subpage"]))
-							$subpage = $_GET["subpage"];
-						die("pages found " . $page . $subpage);
-						
+						if(isset($_GET["page"])){
+							$tmp = explode(' ',$_GET["page"]);
+							$page = $tmp[0];
+							if($tmp[1])
+								$subpage=$tmp[1];
+						}
 						if(file_exists("./pages/" . $page . ".php")):
-							include("./pages/" . $page . ".php");
+							if($subpage != ""):
+								include("./pages/$page.php");
+							else:
+								include("./pages/$page.php");
+							endif;
 						else:
 					?>
 						<div style="text-align:center">
@@ -279,11 +290,6 @@ $(document).ready(function(){
 		</div>
 	</div>
 	
-	
-	
-	
-	
-	
 	<script src="./scripts/make.js"></script>
 	
 	<?php if($page == "gallery"): ?>
@@ -291,10 +297,7 @@ $(document).ready(function(){
 	$(function() {	$('#gallery a').lightBox(); });
 	</script>
 	<?php endif; ?>
-	<script type="text/javascript">
-	if(typeof DESTRUCT == "function")
-		DESTRUCT.apply(this, []);
-	</script>
+	
 	<!-- Container </div> -->
 	<div class="fglow"></div>
 	<div class="footer">

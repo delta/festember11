@@ -67,10 +67,12 @@ $(function() {
 	$(window).scroll(fixedFloating());
 	
 	//SET CLICK HANDLER FOR ALL AJAX FUNCTIONS
-	$("a[ajaxify=1]").click(function(evt){
+	$("a").live('click', function eventHandler(evt){
 		evt.preventDefault();
 
-		var to = $(this).attr("href");
+		var arr = $(this).attr("href").split('+');
+		var to = arr[0];
+		var subpage= arr[1] || "";
 
 		if(typeof window.history.pushState == "function")
 			window.history.pushState({'page':to},to,to);
@@ -79,10 +81,14 @@ $(function() {
 				
 		$(".loaderr").slideDown(100);
 		$.ajax({
-			url: to + "&_a=1",
+			url: to,
+			data: {
+				_a: 1,
+				subpage: subpage
+			},
 			method: "GET",
 			success: function(data) {
-				$("#content").html(data);
+				$("#content").html("").append(data);
 			},
 			error: function(err){
 				$("#content").html("SOME ERROR OCCURED.\n" + err);
@@ -91,7 +97,6 @@ $(function() {
 			complete: function(data){
 				$(".loaderr").slideUp(250);
 				defer(to, data);
-				$("#content").fadeIn();
 			}
 		});
 		return false;
